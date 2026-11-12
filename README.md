@@ -1,6 +1,6 @@
 # DMG
 
-A Haunt theme in four greens on a dot-matrix screen. A faint LCD grid lies over the title bar and sidebar. Group labels sit inverted on dark blocks, the selected tab is a dark row behind a triangle cursor, and progress shows as blocks in a framed track. The title bar is a dark strip with three square buttons and a tracked "HAUNT". ⌘K opens a palette in nested rings with its own triangle cursor.
+A Haunt theme in four greens on a dot-matrix screen. A faint LCD grid lies over the sidebar. Group labels sit inverted on dark blocks, the selected tab is a dark row behind a triangle cursor, and progress shows as blocks in a framed track. The title bar is a dark strip with three square buttons and a tracked "HAUNT". ⌘K opens a palette in nested rings with its own triangle cursor.
 
 ![DMG](screenshot.png)
 
