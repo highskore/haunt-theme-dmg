@@ -1,0 +1,169 @@
+name = "DMG"
+appearance = "light"
+
+[color]
+window.bg = "#9bbc0f"
+window.border = "#306230"
+sidebar.bg = "#8bac0f"
+hairline = "#0f380f"
+row.selected = "#8bac0f"
+text.primary = "#0f380f"
+text.meta = "#225022"
+text.sub = "#225022"
+text.label = "#0f380f"
+text.terminal = "#0f380f"
+needs = "#0f380f"
+lights = "#8bac0f"
+bar.track = "#9bbc0f"
+bar.fill = "#0f380f"
+icon.bg = "#0f380f"
+icon.fg = "#9bbc0f"
+palette.bg = "#9bbc0f"
+palette.border = "#0f380f"
+palette.ink = "#0f380f"
+palette.mute = "#306230"
+palette.rule = "#0f380f"
+palette.entry.rule = "#00000000"
+palette.sel = "#8bac0f"
+palette.chip.fg = "#9bbc0f"
+
+[size]
+sidebar.w = 270
+titlebar.h = 30
+titlebar.padx = 12
+lights.d = 10
+lights.gap = 6
+label.font = 8
+label.pad = [0.75, 8, 5.25]
+row.pad = [5, 16]
+row.gap = [2, 7]
+row.name = 8
+row.meta = 8
+row.right = 8
+sub.font = 8
+sub.mt = 3
+icon.size = 18
+icon.radius = 0
+icon.glyph = 6
+bar.h = 10
+bar.mt = 4
+pane.font = 8
+pane.line = 1.875
+pane.pad = [12, 14]
+palette.radius = 0
+palette.font = 8
+palette.small.font = 8
+palette.input.font = 8
+palette.list.pad = [0, 10]
+palette.input.pad = [7, 10]
+palette.entry.pad = [4, 0]
+palette.foot.pad = [6, 10]
+palette.sel.bar = 7
+
+[font]
+ui = "Silkscreen"
+mono.family = "Press Start 2P"
+
+[app]
+hairline = 2
+display.font = "Press Start 2P"
+title.fg = "#9bbc0f"
+title.meta = "#8bac0f"
+title.font = 8
+title.meta.font = 10
+title.meta.tracking = 0.3
+titlebar.bg = "#0f380f"
+sidebar.padtop = 8
+sidebar.edge = 4
+sidebar.foot.fg = "#0f380f"
+sidebar.foot.font = 8
+sidebar.foot.pad = [6, 16, 14]
+label.fill = "#0f380f"
+label.ink = "#9bbc0f"
+label.block.pad = 6
+label.space = 8
+palette.foot.rule = "#0f380f"
+palette.offset.x = -2
+row.select.fill = "#306230"
+row.select.ink = "#9bbc0f"
+pill.bg = "#0f380f"
+pill.fg = "#9bbc0f"
+pill.ring = "#00000000"
+pill.radius = 0
+pill.pad = [1, 4]
+bar.segment = [6, 2]
+bar.frame = "#0f380f"
+palette.rings = ["#0f380f 2", "#9bbc0f 2", "#0f380f 4", "#9bbc0f 2"]
+palette.row.inset = 10
+
+[layout]
+palette_position = "bottom-right"
+palette_width = 360
+palette_rows = "single-line"
+title_format = "HAUNT"
+
+[effects]
+window.square = true
+window.border = true
+titlebar.rule = false
+lights.shape = "squares"
+label.rule = "block"
+label.case = "upper"
+row.select = "cursor"
+row.inset = 8
+name.font = "display"
+needs.pill = true
+progress.style = "segments"
+bar.done = false
+sidebar.footer = true
+palette.inset = 12
+palette.font = "mono"
+palette.icons = true
+palette.selection = "cursor"
+palette.foot = true
+palette.scrim = false
+palette.keys = "plain"
+palette.tab.sub = "task"
+
+[strings]
+palette.foot = "↵ OPEN · ESC BACK"
+row.sub.prefix = "- "
+
+[ghostty]
+background = "#9bbc0f"
+foreground = "#0f380f"
+cursor-color = "#0f380f"
+selection-background = "#729818"
+font-family = "Press Start 2P"
+font-size = 8
+palette = ["0=#0f380f", "1=#306230", "2=#306230", "3=#306230", "4=#306230", "5=#306230", "6=#306230", "7=#729818", "8=#306230", "9=#0f380f", "10=#0f380f", "11=#0f380f", "12=#0f380f", "13=#0f380f", "14=#0f380f", "15=#0f380f"]
+
+# The LCD's pixel grid, every 3 pt, over all but the terminal. In the sidebar, bitmaps are drawn at 12%,
+# so its dots are 58% to come out at the same 7%.
+[[layer]]
+id = "lcd-window"
+slot = "window.bg"
+  [[layer.draw]]
+  kind = "pattern"
+  cell = [3, 3]
+  dots = ["#0f380f12 0 0", "#0f380f12 1 0", "#0f380f12 2 0", "#0f380f12 0 1", "#0f380f12 0 2"]
+
+[[layer]]
+id = "lcd-sidebar"
+slot = "sidebar"
+  [[layer.draw]]
+  kind = "pattern"
+  cell = [3, 3]
+  dots = ["#0f380f95 0 0", "#0f380f95 1 0", "#0f380f95 2 0", "#0f380f95 0 1", "#0f380f95 0 2"]
+
+# The agent count boxed: 2 pt, row.inset in from the sides, foot.pad's top above and below the text.
+[[layer]]
+id = "foot-frame"
+slot = "sidebar.footer"
+  [[layer.draw]]
+  kind = "rect"
+  left = 8
+  right = 8
+  bottom = 8
+  stroke = "#0f380f"
+  width = 2

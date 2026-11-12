@@ -1,0 +1,16 @@
+[plugin]
+id = "dev.haunt.theme-dmg"
+name = "DMG"
+description = "Four greens and nothing else: a handheld's dot-matrix screen with pixel type."
+version = "0.1.0"
+api = "0.5"
+license = "MIT"
+
+[capabilities]
+theme = true
+
+[contributes.theme]
+id = "dmg"
+file = "theme.toml"
+fonts = ["fonts/PressStart2P-Regular.ttf", "fonts/Silkscreen-Regular.ttf"]
+licenses = ["OFL-PressStart2P.txt", "OFL-Silkscreen.txt"]
