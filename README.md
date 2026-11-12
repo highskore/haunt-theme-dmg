@@ -1,8 +1,21 @@
+<div align="center">
+
+<img src="docs/icon.png" width="96" alt="">
+
 # DMG
 
-A Haunt theme in four greens on a dot-matrix screen. A faint LCD grid lies over the sidebar. Group labels sit inverted on dark blocks, the selected tab is a dark row behind a triangle cursor, and progress shows as blocks in a framed track. The title bar is a dark strip with three square buttons and a tracked "HAUNT". ⌘K opens a palette in nested rings with its own triangle cursor.
+**A Haunt theme in four greens on a dot-matrix screen.**
 
-![DMG](screenshot.png)
+[![Haunt plugin](https://img.shields.io/badge/Haunt-plugin-D97757)](https://github.com/highskore/haunt-hackathon)
+![Plugin API 0.5](https://img.shields.io/badge/plugin%20API-0.5-111)
+![Theme](https://img.shields.io/badge/kind-theme-6b7280)
+[![License: MIT](https://img.shields.io/badge/license-MIT-6b7280)](LICENSE)
+
+<img src="docs/screenshot.png" width="720" alt="Haunt in DMG: green pixel type, dark label blocks, a segmented progress bar and a ringed palette">
+
+</div>
+
+A Haunt theme in four greens on a dot-matrix screen. A faint LCD grid lies over the sidebar. Group labels sit inverted on dark blocks, the selected tab is a dark row behind a triangle cursor, and progress shows as blocks in a framed track. The title bar is a dark strip with three square buttons and a tracked "HAUNT". ⌘K opens a palette in nested rings with its own triangle cursor.
 
 ## Install and switch
 
